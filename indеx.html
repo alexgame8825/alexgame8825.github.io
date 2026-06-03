@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Указываем браузеру передавать только имя вашего домена (без длинных хвостов ссылок) -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Переход...</title>
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            // Создаем виртуальную ссылку на странице
+            var link = document.createElement('a');
+            link.href = "https://viiukuhe.com/dc/?blockID=424820";
+            
+            // Явно разрешаем передачу реферера для этой ссылки
+            link.rel = "opener"; 
+            
+            // Добавляем в документ и симулируем физический клик пользователя
+            document.body.appendChild(link);
+            link.click();
+        };
+    </script>
+</head>
+<body>
+    <p>Загрузка... Если переход не произошел, <a href="https://viiukuhe.com/dc/?blockID=424820">нажмите сюда</a>.</p>
+</body>
+</html>
